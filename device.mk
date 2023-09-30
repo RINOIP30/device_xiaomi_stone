@@ -10,6 +10,9 @@ $(call inherit-product, device/xiaomi/sm6375-common/holi.mk)
 # Call the ViperFX Config
 $(call inherit-product-if-exists, packages/apps/ViPER4AndroidFX/config.mk)
 
+# Call the MiuiCamera setup
+$(call inherit-product-if-exists, vendor/xiaomi/stone-miuicamera/products/miuicamera.mk)
+
 PRODUCT_SHIPPING_API_LEVEL := 30
 
 # Device uses high-density artwork where available
